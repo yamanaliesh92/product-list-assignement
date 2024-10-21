@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .icon-style {
+    @apply absolute right-2 top-9;
+  }
+
+  .full-screen-center {
+    @apply w-screen h-screen flex items-center justify-center;
+  }
+
+  textarea::placeholder,
+  textarea {
+    font: 0.75rem/3 sans-serif;
+  }
+}
